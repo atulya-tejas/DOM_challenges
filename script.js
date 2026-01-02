@@ -45,8 +45,31 @@ document.getElementById("clickMeButton").addEventListener("dblclick",function(){
 // example 7 
 document.getElementById("teaList").addEventListener("click",function(event){
     if(event.target && event.target.matches(".teaItem")){
-        alert("You selected " + event.target.textContent)
+        alert("You selected " + event.target.textContent);
 
     }
+
+})
+
+// example 8 
+
+document.getElementById("feedbackForm").addEventListener("submit",function(event){
+    event.preventDefault();
+    let feedback = document.getElementById("feedbackInput").value;
+    let display = document.getElementById("feedbackDisplay");
+    display.textContent = `Your feedback is : ${feedback} `
+    display.classList.add("highlight");
+})
+
+// example 9
+
+document.addEventListener('DOMContentLoaded',function(){
+    document.getElementById("domStatus").textContent = "DOM fully loaded!"
+})
+
+//exaple 10 
+document.getElementById("toggleHighlight").addEventListener('click',function(){
+    let discrtiptonText = document.getElementById("descriptionText");
+    discrtiptonText.classList.toggle("highlight")
 
 })

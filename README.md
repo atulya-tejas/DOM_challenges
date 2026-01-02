@@ -15,3 +15,8 @@ example 6. Event Handling in the DOM . trying diffrent type of event listeners t
 <br><br>
 example 7. Event Delegation . Selecting by clicking on the list item ( teas ) . and sending a alert for with the selected tea . 
 <br><br>
+example 8. Form Handling . We got feedback as a inpout . and it god displayed on the display region . as we clicked the submit button . 
+<br><br>
+example 9. DOM Content Loaded. It listines the loading event. And change the text when the DOM is lodded . 
+<br><br>
+example 10 . CSS Classes Manipulation . we tried toggle the highlight class on clicking the button. 
