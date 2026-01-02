@@ -1,5 +1,4 @@
 # Learner
+learning DOM and BOM manupulation 
 
-will try to lock in
-guss what??
-gt
+example 1. change the paragraph when the button is clicked. 
