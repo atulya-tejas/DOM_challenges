@@ -1,5 +1,4 @@
 // example 1 
-
 document.getElementById("changeTextButton").addEventListener("click",function(){
     let paragraph = document.getElementById("myParagraph");
     paragraph.textContent = "This is the changed the paragraph";
@@ -29,4 +28,25 @@ document.getElementById("addNewItem").addEventListener("click",function(){
     let newItem = document.createElement("li");
     newItem.textContent = "Eggs";
     document.getElementById("shoppingList").appendChild(newItem);
+})
+
+//example 5
+
+document.getElementById("removeLastTask").addEventListener("click",function(){
+    let toRemove =document.getElementById("taskList");
+    toRemove.lastElementChild.remove();
+})
+
+//exapmle 6 
+document.getElementById("clickMeButton").addEventListener("dblclick",function(){
+    alert("Hello i am atulya");
+})
+
+// example 7 
+document.getElementById("teaList").addEventListener("click",function(event){
+    if(event.target && event.target.matches(".teaItem")){
+        alert("You selected " + event.target.textContent)
+
+    }
+
 })
